@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Sakshi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pacifico', cursive;
+      background: linear-gradient(to top right, #ffc0cb, #dda0dd);
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }.container {
+  padding: 50px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+p {
+  font-size: 1.5em;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeIn 4s ease-in-out;
+}
+
+.stars, .flowers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url('https://i.ibb.co/hRdC9V8/star-flower.png');
+  background-size: contain;
+  background-repeat: repeat;
+  opacity: 0.1;
+  animation: float 60s linear infinite;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}
+
+.music {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="container">
+    <h1>Happy Birthday Sakshi!</h1>
+    <p>Wish you happiest birthday ever, you're my special one 💕, I luv u forever, and happy b'day dear 💕😘.</p>
+  </div>  <div class="music">
+    <audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</body>
+  </html>
